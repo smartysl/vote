@@ -1,0 +1,6 @@
+<h1>注册用户</h1>
+<form action="{% url 'regist' %}" method="post">
+{% csrf_token %}
+    {{ userform.as_p }}
+<input type="submit" value="注册">
+</form>

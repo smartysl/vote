@@ -1,0 +1,6 @@
+<h1>登录</h1>
+<form action="{% url 'login'%}" method="post">
+{% csrf_token %}
+    {{ userform.as_p }}
+<input type="submit" value="登录">
+</form>
